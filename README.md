@@ -1,12 +1,12 @@
-# joaoferreira.dev — site pessoal
+# João Ferreira — Site
 
-Site pessoal de João Ferreira, para usar como currículo online. HTML, CSS e JS puro, sem build step.
+Site pessoal de João Ferreira, para usar como currículo online. HTML, CSS e JS puro.
 
 ## Estrutura
 
 ```
 site/
-├── index.html          Página principal (sobre, experiência, projetos, formação, contacto)
+├── index.html           Página principal (sobre, experiência, projetos, formação, contacto)
 ├── CV_João_Ferreira.pdf Currículo em PDF (botão "Descarregar CV")
 ├── css/style.css        Estilos (tema claro/escuro incluído)
 ├── js/main.js           Toggle de tema, menu mobile, ano no footer

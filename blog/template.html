@@ -13,24 +13,27 @@
 <header class="site-header">
   <nav class="nav container">
     <a href="../index.html" class="nav-brand">João Ferreira</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+    <button class="nav-toggle" id="navToggle" data-i18n-aria="nav.toggleAria" aria-label="Abrir menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="../index.html#about">Sobre</a></li>
-      <li><a href="../index.html#experience">Experiência</a></li>
-      <li><a href="../index.html#projects">Projetos</a></li>
-      <li><a href="../index.html#education">Formação</a></li>
-      <li><a href="index.html">Blog</a></li>
-      <li><a href="../index.html#contact">Contacto</a></li>
+      <li><a href="../index.html#about" data-i18n="nav.about">Sobre</a></li>
+      <li><a href="../index.html#experience" data-i18n="nav.experience">Experiência</a></li>
+      <li><a href="../index.html#projects" data-i18n="nav.projects">Projetos</a></li>
+      <li><a href="../index.html#education" data-i18n="nav.education">Formação</a></li>
+      <li><a href="index.html" data-i18n="nav.blog">Blog</a></li>
+      <li><a href="../index.html#contact" data-i18n="nav.contact">Contacto</a></li>
     </ul>
-    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro">🌙</button>
+    <div class="nav-controls">
+      <button class="lang-toggle" id="langToggle" data-i18n-aria="lang.toggleAria" aria-label="Mudar idioma">EN</button>
+      <button class="theme-toggle" id="themeToggle" data-i18n-aria="theme.toggleAria" aria-label="Alternar tema claro/escuro">🌙</button>
+    </div>
   </nav>
 </header>
 
 <main>
   <article class="post-content">
-    <a href="index.html" class="back-link">&larr; Voltar ao blog</a>
+    <a href="index.html" class="back-link" data-i18n="blog.back">&larr; Voltar ao blog</a>
     <h1>Título do Artigo</h1>
     <p class="post-meta">Jan 2026</p>
 
@@ -45,10 +48,11 @@
 
 <footer class="site-footer">
   <div class="container">
-    <p>&copy; <span id="year"></span> João Ferreira. Feito com HTML, CSS e JS puro.</p>
+    <p>&copy; <span id="year"></span> João Ferreira. <span data-i18n="footer.text">Feito com HTML, CSS e JS puro.</span></p>
   </div>
 </footer>
 
+<script src="../js/i18n.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>
