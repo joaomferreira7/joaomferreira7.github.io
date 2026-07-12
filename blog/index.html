@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — João Ferreira</title>
+<meta name="description" content="Artigos de João Ferreira sobre engenharia de software, PL/SQL, Java e projetos pessoais.">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="data:,">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="../index.html" class="nav-brand">João Ferreira</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html#about">Sobre</a></li>
+      <li><a href="../index.html#experience">Experiência</a></li>
+      <li><a href="../index.html#projects">Projetos</a></li>
+      <li><a href="../index.html#education">Formação</a></li>
+      <li><a href="index.html">Blog</a></li>
+      <li><a href="../index.html#contact">Contacto</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro">🌙</button>
+  </nav>
+</header>
+
+<main>
+  <section class="section container">
+    <h2 class="section-title">Blog</h2>
+
+    <div class="blog-list">
+      <!--
+        Para adicionar um novo artigo:
+        1. Duplica blog/template.html e renomeia (ex: blog/meu-artigo.html)
+        2. Edita o título, data e conteúdo dentro do ficheiro
+        3. Adiciona aqui um card .blog-card a apontar para o novo ficheiro, seguindo o exemplo comentado abaixo:
+
+        <a class="blog-card" href="meu-artigo.html">
+          <h3>Título do artigo</h3>
+          <p class="blog-meta">Jan 2026</p>
+          <p>Resumo curto do artigo em uma ou duas frases.</p>
+        </a>
+      -->
+
+      <p class="empty-state">Ainda não há artigos publicados. Volta em breve!</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> João Ferreira. Feito com HTML, CSS e JS puro.</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
