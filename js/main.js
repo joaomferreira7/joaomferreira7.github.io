@@ -1,3 +1,4 @@
+
 // Theme toggle
 const themeToggle = document.getElementById('themeToggle');
 const root = document.documentElement;
