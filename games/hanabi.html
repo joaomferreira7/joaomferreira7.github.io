@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Título do Artigo — João Ferreira</title>
-<meta name="description" content="Resumo curto do artigo para partilha e motores de busca.">
+<title>Hanabi — João Ferreira</title>
+<meta name="description" content="Hanabi jogável no browser contra um bot — versão web do projeto pessoal Hanabi de João Ferreira.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -27,7 +27,6 @@
       <li><a href="../index.html#projects" data-i18n="nav.projects">Projetos</a></li>
       <li><a href="../index.html#education" data-i18n="nav.education">Formação</a></li>
       <li><a href="../index.html#contact" data-i18n="nav.contact">Contacto</a></li>
-      <li><a href="index.html" data-i18n="nav.blog">Blog</a></li>
     </ul>
     <div class="nav-controls">
       <button class="lang-toggle" id="langToggle" data-i18n-aria="lang.toggleAria" aria-label="Mudar idioma">EN</button>
@@ -37,18 +36,65 @@
 </header>
 
 <main>
-  <article class="post-content">
-    <a href="index.html" class="back-link" data-i18n="blog.back">&larr; Voltar ao blog</a>
-    <h1>Título do Artigo</h1>
-    <p class="post-meta">Jan 2026</p>
+  <div class="game-page">
+    <a href="../index.html#projects" class="back-link" id="hnBackLink">&larr; <span id="hnBackText">Voltar aos projetos</span></a>
 
-    <p>
-      Este é o primeiro parágrafo do artigo. Substitui este texto pelo conteúdo real.
+    <div class="game-header">
+      <div>
+        <h1 class="game-title">Hanabi</h1>
+        <p class="game-subtitle" id="hnSubtitle">
+          Joga Hanabi contra o bot. Vês as cartas do bot mas não as tuas — dão-se pistas um ao outro
+          para completar as 5 pilhas de cor por ordem, de 1 a 5.
+        </p>
+      </div>
+    </div>
+
+    <div class="game-layout">
+      <div class="game-board-wrap">
+        <div class="hn-tokens">
+          <span id="hnClueLabel"><strong id="hnClues">8</strong> pistas</span>
+          <span id="hnLifeLabel"><strong id="hnLives">3</strong> vidas</span>
+          <span id="hnScoreLabel"><strong id="hnScore">0</strong> / 25 pontos</span>
+          <span id="hnDeckLabel"><strong id="hnDeck">40</strong> no baralho</span>
+        </div>
+
+        <p class="hn-zone-label" id="hnStacksLabel">Pilhas na mesa</p>
+        <div class="hn-stacks" id="hnStacks"></div>
+
+        <p class="hn-zone-label" id="hnBotLabel">Mão do bot</p>
+        <div class="hn-hand" id="hnBotHand"></div>
+        <p class="hn-legend" id="hnLegendBot">C = pista de cor já dada · N = pista de número já dada</p>
+
+        <p class="hn-zone-label" id="hnYouLabel">A tua mão</p>
+        <div class="hn-hand selectable" id="hnYouHand"></div>
+        <p class="hn-legend" id="hnLegendYou">R/Y/G/B/P = cor já revelada · número = valor já revelado · "?" = ainda não sabes</p>
+
+        <div id="hnClueTarget"></div>
+        <div id="hnMessage" class="game-overlay-msg" style="display:none;"></div>
+      </div>
+      <div class="game-sidebar">
+        <div class="game-panel">
+          <h3 id="hnActionsTitle">Ações</h3>
+          <div class="game-actions">
+            <button class="btn btn-primary btn-sm" id="hnClueBtn">Dar pista</button>
+            <button class="btn btn-secondary btn-sm" id="hnDiscardBtn">Descartar</button>
+            <button class="btn btn-secondary btn-sm" id="hnPlayBtn">Jogar carta</button>
+          </div>
+          <p class="game-status" id="hnHint" style="margin-top:12px;"></p>
+        </div>
+        <div class="game-panel">
+          <h3 id="hnLogTitle">Registo</h3>
+          <div class="hn-log" id="hnLog"></div>
+        </div>
+        <button class="btn btn-secondary btn-sm" id="hnNewGame">Novo Jogo</button>
+      </div>
+    </div>
+
+    <p class="game-subtitle" style="margin-top:24px;" id="hnSourceNote">
+      Versão jogável no browser, inspirada no projeto original em C —
+      <a href="https://github.com/joaomferreira7/Hanabi" target="_blank" rel="noopener">código-fonte no GitHub</a>.
     </p>
-    <p>
-      Podes adicionar quantos parágrafos quiseres, seguindo esta estrutura simples.
-    </p>
-  </article>
+  </div>
 </main>
 
 <footer class="site-footer">
@@ -59,5 +105,6 @@
 
 <script src="../js/i18n.js?v=3"></script>
 <script src="../js/main.js?v=3"></script>
+<script src="../js/hanabi.js?v=1"></script>
 </body>
 </html>
