@@ -18,40 +18,47 @@
       lang: { toggleAria: "Mudar idioma" },
       hero: {
         eyebrow: "Olá, chamo-me",
-        summary: "Engenheiro de Software com 2 anos de experiência profissional, a contribuir para o desenvolvimento e manutenção de soluções de software escaláveis e fiáveis em ambientes dinâmicos. Colaboro com equipas multidisciplinares para entregar produtos de alta qualidade que respondem às necessidades dos utilizadores e do negócio. Motivado pela aprendizagem contínua e pela resolução de problemas complexos.",
+        summary: "Analista de Sistemas focado em projetos de integração Oracle Retail, com mais de 2 anos de experiência a desenvolver soluções em Java e PL/SQL para clientes internacionais de retalho. Apaixonado por transformar problemas complexos em soluções fiáveis e escaláveis.",
         contactBtn: "Contactar",
         downloadBtn: "Descarregar CV",
         photoAlt: "Foto de João Ferreira"
       },
       about: {
         title: "Sobre mim",
-        p1: "Sou Engenheiro de Software com 2 anos de experiência profissional na indústria tecnológica, contribuindo para o desenvolvimento e manutenção de soluções de software escaláveis e fiáveis em ambientes de ritmo acelerado.",
-        p2: "Já colaborei com equipas multidisciplinares para entregar produtos de alta qualidade que respondem tanto às necessidades dos utilizadores como às do negócio.",
-        p3: "Sou motivado pela aprendizagem contínua, gosto de resolver problemas complexos e valorizo uma comunicação clara e eficaz. Estou sempre aberto a novos desafios e oportunidades que fomentem tanto a minha experiência técnica como o meu crescimento profissional.",
+        p1: "Trabalho como Analista de Sistemas na Retail Consult, onde desenvolvo e mantenho soluções de integração dentro do ecossistema Oracle Retail — desde adaptadores Java que ligam sistemas e plataformas externas, até scripts PL/SQL que suportam migrações de dados e atualizações de versão.",
+        p2: "No dia a dia, colaboro diretamente com clientes internacionais para levantar requisitos e desenhar soluções à medida, e presto suporte de produção de ponta a ponta — da análise de causa raiz até à implementação de correções sustentáveis a longo prazo.",
+        p3: "Sou motivado pela aprendizagem contínua — reforçada por formações complementares em autogestão e orientação para resultados — e gosto de comunicar de forma clara com equipas multidisciplinares. Estou sempre aberto a novos desafios que aliem crescimento técnico e profissional.",
         skillsTitle: "Competências",
         langsTitle: "Idiomas",
-        lang: { pt: "Português", ptLevel: "Nativo", en: "Inglês", enLevel: "Intermédio / B1" }
+        lang: { pt: "Português", ptLevel: "Nativo", en: "Inglês", enLevel: "Conversação" }
       },
       experience: {
         title: "Experiência",
         role: "Analista de Sistemas",
         date: "Nov 2023 – Presente · Leça do Balio, Portugal",
-        bullet1: "Desenho e implementação de soluções robustas em PL/SQL dentro do ecossistema Oracle Retail.",
-        bullet2: "Desenvolvimento e otimização de procedimentos, funções, packages e scripts PL/SQL.",
-        bullet3: "Colaboração com clientes e stakeholders para levantamento de requisitos e desenho de soluções.",
-        bullet4: "Suporte em produção: troubleshooting de incidentes, análise de causa raiz e correções."
+        intro: "Analista de Sistemas com mais de 2 anos de experiência em projetos de integração Oracle Retail, desenvolvendo soluções em Java e PL/SQL para suportar integração de dados, migração e suporte em produção para clientes internacionais de retalho.",
+        bullet1: "Desenvolvimento de adaptadores de integração personalizados em Java, extraindo e transformando dados para ligação com sistemas e plataformas externas em diferentes projetos de clientes internacionais de retalho.",
+        bullet2: "Construção e manutenção de componentes de integração baseados em ficheiros, garantindo troca de dados fiável e bidirecional entre sistemas.",
+        bullet3: "Desenho e implementação de soluções robustas em PL/SQL no ecossistema Oracle Retail, incluindo suporte a atualizações de versão major e projetos de migração para a cloud.",
+        bullet4: "Desenvolvimento e otimização de procedimentos, funções, packages e scripts PL/SQL de alta performance, melhorando a eficiência, escalabilidade e manutenibilidade dos sistemas.",
+        bullet5: "Colaboração próxima com clientes e stakeholders para levantamento de requisitos, tradução de necessidades de negócio em especificações técnicas e desenho de soluções escaláveis.",
+        bullet6: "Suporte de produção de ponta a ponta, com resolução proativa de incidentes, análise de causa raiz e implementação de correções sustentáveis a longo prazo."
       },
       projects: {
         title: "Projetos",
-        hanabi: { meta: "Jan 2019 – Dez 2020", desc: "Projeto pessoal de desenvolvimento de software." },
-        lettersoup: { meta: "Mar 2020 – Abr 2020", desc: "Projeto pessoal de desenvolvimento de software." },
-        rss: { meta: "Jan 2021 – Mar 2021", desc: "Leitor de feeds RSS." },
-        cinema: { meta: "Set 2021 – Jun 2022", desc: "Aplicação web para gestão de sessões de cinema." },
+        hanabi: { meta: "Jan 2019 – Dez 2020", desc: "Projeto de desenvolvimento de software iniciado em contexto universitário." },
+        lettersoup: { meta: "Mar 2020 – Abr 2020", desc: "Projeto de desenvolvimento de software iniciado em contexto universitário." },
+        playBtn: "Jogar →",
         viewGithub: "Ver no GitHub →",
         note: 'Descrições e links serão atualizados brevemente. Vê todos os projetos em <a href="https://github.com/joaomferreira7" target="_blank" rel="noopener">github.com/joaomferreira7</a>.'
       },
       education: {
         title: "Formação",
+        training: {
+          title: "Formação Complementar",
+          bullet1: "Self-Management Skills",
+          bullet2: "Results Orientation"
+        },
         degree: {
           title: "Licenciatura em Engenharia Informática",
           meta: "Set 2019 – Jun 2023 · Vila Real, Portugal",
@@ -95,40 +102,47 @@
       lang: { toggleAria: "Switch language" },
       hero: {
         eyebrow: "Hi, I'm",
-        summary: "Software Engineer with 2 years of professional experience, contributing to the development and maintenance of scalable and reliable software solutions in fast-paced environments. I collaborate with cross-functional teams to deliver high-quality products that meet both user and business needs. Driven by continuous learning and a passion for solving complex problems.",
+        summary: "Systems Analyst focused on Oracle Retail integration projects, with 2+ years of experience developing Java and PL/SQL solutions for international retail clients. Passionate about turning complex problems into reliable, scalable solutions.",
         contactBtn: "Contact",
         downloadBtn: "Download CV",
         photoAlt: "Photo of João Ferreira"
       },
       about: {
         title: "About me",
-        p1: "Software Engineer with 2 years of professional experience in the tech industry, contributing to the development and maintenance of scalable and reliable software solutions in fast-paced environments.",
-        p2: "I have collaborated with cross-functional teams to deliver high-quality products that meet both user and business needs.",
-        p3: "I am driven by continuous learning, enjoy solving complex problems, and value clear and effective communication. Always open to new challenges and opportunities that foster both technical expertise and professional growth.",
+        p1: "I work as a Systems Analyst at Retail Consult, where I develop and maintain integration solutions within the Oracle Retail ecosystem — from Java adapters connecting external systems and platforms to PL/SQL scripts supporting data migrations and version upgrades.",
+        p2: "Day to day, I collaborate directly with international clients to gather requirements and design tailored solutions, and provide end-to-end production support — from root cause analysis to implementing long-term, sustainable fixes.",
+        p3: "I'm driven by continuous learning — reinforced by complementary training in self-management and results orientation — and enjoy communicating clearly with cross-functional teams. Always open to new challenges that combine technical and professional growth.",
         skillsTitle: "Skills",
         langsTitle: "Languages",
-        lang: { pt: "Portuguese", ptLevel: "Native", en: "English", enLevel: "Intermediate / B1" }
+        lang: { pt: "Portuguese", ptLevel: "Native", en: "English", enLevel: "Conversational" }
       },
       experience: {
         title: "Experience",
         role: "System Analyst",
         date: "Nov 2023 – Present · Leça do Balio, Portugal",
-        bullet1: "Designed and implemented robust PL/SQL solutions within the Oracle Retail ecosystem.",
-        bullet2: "Developed and optimized PL/SQL procedures, functions, packages, and scripts.",
-        bullet3: "Collaborated with clients and stakeholders to gather requirements and design solutions.",
-        bullet4: "Provided production support, troubleshooting incidents, root cause analysis, and fixes."
+        intro: "Systems Analyst with 2+ years of experience in Oracle Retail integration projects, developing Java and PL/SQL solutions to support data integration, migration, and production support for international retail clients.",
+        bullet1: "Developed custom Java-based integration adapters, extracting and transforming data to connect with external systems and platforms across multiple international retail client projects.",
+        bullet2: "Built and maintained file-based integration components, ensuring reliable, two-way data exchange between systems.",
+        bullet3: "Designed and implemented robust PL/SQL solutions within the Oracle Retail ecosystem, including support for major version upgrades and cloud migration projects.",
+        bullet4: "Developed and optimized high-performance PL/SQL procedures, functions, packages, and scripts, improving system efficiency, scalability, and maintainability.",
+        bullet5: "Collaborated closely with clients and stakeholders to gather requirements, translate business needs into technical specifications, and design scalable solutions.",
+        bullet6: "Provided end-to-end production support, proactively troubleshooting incidents, performing root cause analysis, and delivering long-term, sustainable fixes."
       },
       projects: {
         title: "Projects",
-        hanabi: { meta: "Jan 2019 – Dec 2020", desc: "Personal software development project." },
-        lettersoup: { meta: "Mar 2020 – Apr 2020", desc: "Personal software development project." },
-        rss: { meta: "Jan 2021 – Mar 2021", desc: "RSS feed reader." },
-        cinema: { meta: "Sep 2021 – Jun 2022", desc: "Web application for managing cinema screenings." },
+        hanabi: { desc: "Software development project started in a university context." },
+        lettersoup: { desc: "Software development project started in a university context." },
+        playBtn: "Play →",
         viewGithub: "View on GitHub →",
         note: 'Descriptions and links will be updated soon. See all projects at <a href="https://github.com/joaomferreira7" target="_blank" rel="noopener">github.com/joaomferreira7</a>.'
       },
       education: {
         title: "Education",
+        training: {
+          title: "Professional Training",
+          bullet1: "Self-Management Skills",
+          bullet2: "Results Orientation"
+        },
         degree: {
           title: "Bachelor's Degree in Computer Science and Engineering",
           meta: "Sep 2019 – Jun 2023 · Vila Real, Portugal",

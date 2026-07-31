@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Título do Artigo — João Ferreira</title>
-<meta name="description" content="Resumo curto do artigo para partilha e motores de busca.">
+<title>Letter Soup — João Ferreira</title>
+<meta name="description" content="Sopa de letras jogável no browser — versão web do projeto pessoal Letter Soup de João Ferreira.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -27,7 +27,6 @@
       <li><a href="../index.html#projects" data-i18n="nav.projects">Projetos</a></li>
       <li><a href="../index.html#education" data-i18n="nav.education">Formação</a></li>
       <li><a href="../index.html#contact" data-i18n="nav.contact">Contacto</a></li>
-      <li><a href="index.html" data-i18n="nav.blog">Blog</a></li>
     </ul>
     <div class="nav-controls">
       <button class="lang-toggle" id="langToggle" data-i18n-aria="lang.toggleAria" aria-label="Mudar idioma">EN</button>
@@ -37,18 +36,42 @@
 </header>
 
 <main>
-  <article class="post-content">
-    <a href="index.html" class="back-link" data-i18n="blog.back">&larr; Voltar ao blog</a>
-    <h1>Título do Artigo</h1>
-    <p class="post-meta">Jan 2026</p>
+  <div class="game-page">
+    <a href="../index.html#projects" class="back-link" id="lsBackLink">&larr; <span id="lsBackText">Voltar aos projetos</span></a>
 
-    <p>
-      Este é o primeiro parágrafo do artigo. Substitui este texto pelo conteúdo real.
+    <div class="game-header">
+      <div>
+        <h1 class="game-title">Letter Soup</h1>
+        <p class="game-subtitle" id="lsSubtitle">
+          Sopa de letras — encontra as 10 palavras escondidas na grelha. Clica e arrasta sobre as letras
+          para as selecionar (na horizontal, vertical ou diagonal, em qualquer direção).
+        </p>
+      </div>
+    </div>
+
+    <div class="game-layout">
+      <div class="game-board-wrap">
+        <div id="lsGrid" class="ls-grid"></div>
+      </div>
+      <div class="game-sidebar">
+        <div class="game-panel">
+          <h3 id="lsWordsTitle">Palavras</h3>
+          <ul class="word-list" id="lsWordList"></ul>
+        </div>
+        <div class="game-panel">
+          <p class="game-status" id="lsStatus">0 / 10 encontradas</p>
+          <div class="game-actions" style="margin-top:14px;">
+            <button class="btn btn-primary btn-sm" id="lsNewGame">Novo Jogo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="game-subtitle" style="margin-top:24px;" id="lsSourceNote">
+      Versão jogável no browser, inspirada no projeto original em C++ —
+      <a href="https://github.com/joaomferreira7/LetterSoup" target="_blank" rel="noopener">código-fonte no GitHub</a>.
     </p>
-    <p>
-      Podes adicionar quantos parágrafos quiseres, seguindo esta estrutura simples.
-    </p>
-  </article>
+  </div>
 </main>
 
 <footer class="site-footer">
@@ -59,5 +82,6 @@
 
 <script src="../js/i18n.js?v=3"></script>
 <script src="../js/main.js?v=3"></script>
+<script src="../js/lettersoup.js?v=1"></script>
 </body>
 </html>

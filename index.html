@@ -5,14 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="meta.title">João Ferreira — Software Engineer</title>
 <meta name="description" data-i18n-content="meta.description" content="João Ferreira, Software Engineer. Experiência em PL/SQL, Java, Spring Boot, Oracle Retail. Portfólio, currículo e contactos.">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=3">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232dd4bf'/%3E%3Cstop offset='1' stop-color='%2334d399'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cline x1='16' y1='16' x2='48' y2='32' stroke='white' stroke-width='5' stroke-linecap='round'/%3E%3Cline x1='16' y1='48' x2='48' y2='32' stroke='white' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='16' r='6' fill='white'/%3E%3Ccircle cx='16' cy='48' r='6' fill='white'/%3E%3Ccircle cx='48' cy='32' r='7.5' fill='white'/%3E%3C/svg%3E">
 </head>
 <body>
 
+<div class="scroll-progress" id="scrollProgress"></div>
+
 <header class="site-header">
   <nav class="nav container">
-    <a href="#top" class="nav-brand">João Ferreira</a>
+    <a href="#top" class="nav-brand"><span class="nav-logo" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><line x1="6" y1="6" x2="18" y2="12" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/><line x1="6" y1="18" x2="18" y2="12" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/><circle cx="6" cy="6" r="2.3" fill="#fff"/><circle cx="6" cy="18" r="2.3" fill="#fff"/><circle cx="18" cy="12" r="2.8" fill="#fff"/></svg></span>João Ferreira</a>
     <button class="nav-toggle" id="navToggle" data-i18n-aria="nav.toggleAria" aria-label="Abrir menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -21,7 +26,6 @@
       <li><a href="#experience" data-i18n="nav.experience">Experiência</a></li>
       <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
       <li><a href="#education" data-i18n="nav.education">Formação</a></li>
-      <li><a href="blog/index.html" data-i18n="nav.blog">Blog</a></li>
       <li><a href="#contact" data-i18n="nav.contact">Contacto</a></li>
     </ul>
     <div class="nav-controls">
@@ -34,6 +38,9 @@
 <main>
 
   <section id="top" class="hero container">
+    <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob-3" aria-hidden="true"></div>
     <div class="hero-photo">
       <img src="assets/img/profile.jpg" alt="Foto de João Ferreira" data-i18n-alt="hero.photoAlt" id="profilePhoto" onerror="this.closest('.hero-photo').style.display='none'">
     </div>
@@ -42,10 +49,9 @@
       <h1>João Ferreira</h1>
       <p class="hero-role">Software Engineer</p>
       <p class="hero-summary" data-i18n="hero.summary">
-        Engenheiro de Software com 2 anos de experiência profissional, a contribuir para o desenvolvimento
-        e manutenção de soluções de software escaláveis e fiáveis em ambientes dinâmicos. Colaboro com equipas
-        multidisciplinares para entregar produtos de alta qualidade que respondem às necessidades dos utilizadores
-        e do negócio. Motivado pela aprendizagem contínua e pela resolução de problemas complexos.
+        Analista de Sistemas focado em projetos de integração Oracle Retail, com mais de 2 anos de experiência
+        a desenvolver soluções em Java e PL/SQL para clientes internacionais de retalho. Apaixonado por
+        transformar problemas complexos em soluções fiáveis e escaláveis.
       </p>
       <div class="hero-actions">
         <a href="#contact" class="btn btn-primary" data-i18n="hero.contactBtn">Contactar</a>
@@ -64,23 +70,26 @@
     <div class="about-grid">
       <div class="about-text">
         <p data-i18n="about.p1">
-          Sou Engenheiro de Software com 2 anos de experiência profissional na indústria tecnológica,
-          contribuindo para o desenvolvimento e manutenção de soluções de software escaláveis e fiáveis
-          em ambientes de ritmo acelerado.
+          Trabalho como Analista de Sistemas na Retail Consult, onde desenvolvo e mantenho soluções de
+          integração dentro do ecossistema Oracle Retail — desde adaptadores Java que ligam sistemas e
+          plataformas externas, até scripts PL/SQL que suportam migrações de dados e atualizações de versão.
         </p>
         <p data-i18n="about.p2">
-          Já colaborei com equipas multidisciplinares para entregar produtos de alta qualidade que respondem
-          tanto às necessidades dos utilizadores como às do negócio.
+          No dia a dia, colaboro diretamente com clientes internacionais para levantar requisitos e desenhar
+          soluções à medida, e presto suporte de produção de ponta a ponta — da análise de causa raiz até à
+          implementação de correções sustentáveis a longo prazo.
         </p>
         <p data-i18n="about.p3">
-          Sou motivado pela aprendizagem contínua, gosto de resolver problemas complexos e valorizo uma
-          comunicação clara e eficaz. Estou sempre aberto a novos desafios e oportunidades que fomentem
-          tanto a minha experiência técnica como o meu crescimento profissional.
+          Sou motivado pela aprendizagem contínua — reforçada por formações complementares em autogestão e
+          orientação para resultados — e gosto de comunicar de forma clara com equipas multidisciplinares.
+          Estou sempre aberto a novos desafios que aliem crescimento técnico e profissional.
         </p>
       </div>
       <div class="about-skills">
         <h3 data-i18n="about.skillsTitle">Competências</h3>
         <ul class="skill-tags">
+          <li>Systems Integration</li>
+          <li>Oracle Retail</li>
           <li>PL/SQL</li>
           <li>Java</li>
           <li>SQL</li>
@@ -99,7 +108,7 @@
         <h3 data-i18n="about.langsTitle">Idiomas</h3>
         <ul class="lang-list">
           <li><span data-i18n="about.lang.pt">Português</span><span class="lang-level" data-i18n="about.lang.ptLevel">Nativo</span></li>
-          <li><span data-i18n="about.lang.en">Inglês</span><span class="lang-level" data-i18n="about.lang.enLevel">Intermédio / B1</span></li>
+          <li><span data-i18n="about.lang.en">Inglês</span><span class="lang-level" data-i18n="about.lang.enLevel">Conversação</span></li>
         </ul>
       </div>
     </div>
@@ -113,11 +122,18 @@
         <div class="timeline-content">
           <h3><span data-i18n="experience.role">Analista de Sistemas</span> <span class="timeline-org">— Retail Consult</span></h3>
           <p class="timeline-meta" data-i18n="experience.date">Nov 2023 – Presente · Leça do Balio, Portugal</p>
+          <p class="role-intro" data-i18n="experience.intro">
+            Analista de Sistemas com mais de 2 anos de experiência em projetos de integração Oracle Retail,
+            desenvolvendo soluções em Java e PL/SQL para suportar integração de dados, migração e suporte
+            em produção para clientes internacionais de retalho.
+          </p>
           <ul>
-            <li data-i18n="experience.bullet1">Desenho e implementação de soluções robustas em PL/SQL dentro do ecossistema Oracle Retail.</li>
-            <li data-i18n="experience.bullet2">Desenvolvimento e otimização de procedimentos, funções, packages e scripts PL/SQL.</li>
-            <li data-i18n="experience.bullet3">Colaboração com clientes e stakeholders para levantamento de requisitos e desenho de soluções.</li>
-            <li data-i18n="experience.bullet4">Suporte em produção: troubleshooting de incidentes, análise de causa raiz e correções.</li>
+            <li data-i18n="experience.bullet1">Desenvolvimento de adaptadores de integração personalizados em Java, extraindo e transformando dados para ligação com sistemas e plataformas externas em diferentes projetos de clientes internacionais de retalho.</li>
+            <li data-i18n="experience.bullet2">Construção e manutenção de componentes de integração baseados em ficheiros, garantindo troca de dados fiável e bidirecional entre sistemas.</li>
+            <li data-i18n="experience.bullet3">Desenho e implementação de soluções robustas em PL/SQL no ecossistema Oracle Retail, incluindo suporte a atualizações de versão major e projetos de migração para a cloud.</li>
+            <li data-i18n="experience.bullet4">Desenvolvimento e otimização de procedimentos, funções, packages e scripts PL/SQL de alta performance, melhorando a eficiência, escalabilidade e manutenibilidade dos sistemas.</li>
+            <li data-i18n="experience.bullet5">Colaboração próxima com clientes e stakeholders para levantamento de requisitos, tradução de necessidades de negócio em especificações técnicas e desenho de soluções escaláveis.</li>
+            <li data-i18n="experience.bullet6">Suporte de produção de ponta a ponta, com resolução proativa de incidentes, análise de causa raiz e implementação de correções sustentáveis a longo prazo.</li>
           </ul>
         </div>
       </article>
@@ -130,26 +146,20 @@
       <article class="project-card">
         <h3>Hanabi</h3>
         <p class="project-meta" data-i18n="projects.hanabi.meta">Jan 2019 – Dez 2020</p>
-        <p data-i18n="projects.hanabi.desc">Projeto pessoal de desenvolvimento de software.</p>
-        <a href="https://github.com/joaomferreira7" target="_blank" rel="noopener" class="project-link" data-i18n="projects.viewGithub">Ver no GitHub →</a>
+        <p data-i18n="projects.hanabi.desc">Projeto de desenvolvimento de software iniciado em contexto universitário.</p>
+        <div class="project-links">
+          <a href="games/hanabi.html" class="project-link" data-i18n="projects.playBtn">Jogar →</a>
+          <a href="https://github.com/joaomferreira7/Hanabi" target="_blank" rel="noopener" class="project-link" data-i18n="projects.viewGithub">Ver no GitHub →</a>
+        </div>
       </article>
       <article class="project-card">
         <h3>Letter Soup</h3>
         <p class="project-meta" data-i18n="projects.lettersoup.meta">Mar 2020 – Abr 2020</p>
-        <p data-i18n="projects.lettersoup.desc">Projeto pessoal de desenvolvimento de software.</p>
-        <a href="https://github.com/joaomferreira7" target="_blank" rel="noopener" class="project-link" data-i18n="projects.viewGithub">Ver no GitHub →</a>
-      </article>
-      <article class="project-card">
-        <h3>RSS Reader</h3>
-        <p class="project-meta" data-i18n="projects.rss.meta">Jan 2021 – Mar 2021</p>
-        <p data-i18n="projects.rss.desc">Leitor de feeds RSS.</p>
-        <a href="https://github.com/joaomferreira7" target="_blank" rel="noopener" class="project-link" data-i18n="projects.viewGithub">Ver no GitHub →</a>
-      </article>
-      <article class="project-card">
-        <h3>Cinema Web Application</h3>
-        <p class="project-meta" data-i18n="projects.cinema.meta">Set 2021 – Jun 2022</p>
-        <p data-i18n="projects.cinema.desc">Aplicação web para gestão de sessões de cinema.</p>
-        <a href="https://github.com/joaomferreira7" target="_blank" rel="noopener" class="project-link" data-i18n="projects.viewGithub">Ver no GitHub →</a>
+        <p data-i18n="projects.lettersoup.desc">Projeto de desenvolvimento de software iniciado em contexto universitário.</p>
+        <div class="project-links">
+          <a href="games/lettersoup.html" class="project-link" data-i18n="projects.playBtn">Jogar →</a>
+          <a href="https://github.com/joaomferreira7/LetterSoup" target="_blank" rel="noopener" class="project-link" data-i18n="projects.viewGithub">Ver no GitHub →</a>
+        </div>
       </article>
     </div>
     <p class="project-note" data-i18n-html="projects.note">Descrições e links serão atualizados brevemente. Vê todos os projetos em <a href="https://github.com/joaomferreira7" target="_blank" rel="noopener">github.com/joaomferreira7</a>.</p>
@@ -158,6 +168,16 @@
   <section id="education" class="section container">
     <h2 class="section-title" data-i18n="education.title">Formação</h2>
     <div class="timeline">
+      <article class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <h3><span data-i18n="education.training.title">Formação Complementar</span> <span class="timeline-org">— Dynergie</span></h3>
+          <ul>
+            <li data-i18n="education.training.bullet1">Self-Management Skills</li>
+            <li data-i18n="education.training.bullet2">Results Orientation</li>
+          </ul>
+        </div>
+      </article>
       <article class="timeline-item">
         <div class="timeline-marker"></div>
         <div class="timeline-content">
@@ -209,7 +229,7 @@
   </div>
 </footer>
 
-<script src="js/i18n.js"></script>
-<script src="js/main.js"></script>
+<script src="js/i18n.js?v=3"></script>
+<script src="js/main.js?v=3"></script>
 </body>
 </html>
